@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+		Dead Pixel Arcade - Template
+		Author: James Pack
+		Date: 12/4/2020
+		
+		Filename: ContactUs.htm
+		Supporting files: main.css, DPALogo.png
+		
+	-->
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Contact Us</title>
+		
+		<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css"/>
+		<link href="Assets/Styles/fstyle.css" rel="stylesheet" type="text/css"/>
+
+	</head>
+
+	<body>
+		<header> 
+			<img src="Assets/Images/DPALogo.png" alt="Dead Pixel Arcade" class="head"/>
+		</header>
+	
+		<div class="sidenav">
+			<a href="index.htm">Home</a>
+			<a href="AboutUs.htm">About Us</a>
+			<a href="FeaturedGames.htm">Featured Games</a>
+			<a href="Events.htm">Events</a>
+			<a href="ContactUs.htm">Contact Us</a>
+		</div>
+			
+	<section id="main">
+		<h1>Contact Us</h1>
+		<h2>Book a Private Party Today!</h2>
+		<p>Dead Pixel Arcade is a now offering private party hosting. We offer a wide variety of options for different party sizes from 20 people up to 100 people. 
+		If you are interested please fill out the information down below, and we will get back with you as soon as possible to schedule your exciting night.</p>
+		<form action="formResult.html">
+          <fieldset id="contactinfo">
+
+            <label for="fName">First Name</label>
+            <input type="text" id="fName" name="fName" required="required" />
+
+            <label for="lName">Last Name</label>
+            <input type="text" id="lName" name="lName" required="required" />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn"
+                   required="required"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="someone@example.com"
+                   required="required"
+                   pattern="^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$"/>
+
+            <label>Comments</label>
+            <textarea id="feedback" name="feeback"></textarea>
+          </fieldset>
+
+          <input type="checkbox" id="monthlyletter" name="monthlyletter">
+          <label for="monthlyletter">Please send me monthly newsletters.</label>
+
+          <input type="submit" value="Send" />
+          <input type="reset" value="Reset" />
+        </form>
+	</section>
+	
+		<footer>
+			<address>
+				Dead Pixel Arcade &#183;
+				123 Sesame Street &#183;
+				New York, NY 10128 &#183;
+				(215) 702 - 3566 &#183;
+				DeadPixelArcade@gmail.com
+			</address>
+		</footer>
+				
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+		Dead Pixel Arcade - About Us
+		Author: James Pack
+		Date: 12/4/2020
+		
+		Filename: AboutUs.htm
+		Supporting files: main.css, DPALogo.png
+		
+	-->
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Form Summary</title>
+		
+		<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css"/>
+		
+	</head>
+
+	<body>
+		<header> 
+			<img src="Assets/Images/DPALogo.png" alt="Dead Pixel Arcade" class="head"/>
+		</header>
+	
+		<div class="sidenav">
+			<a href="index.htm">Home</a>
+			<a href="AboutUs.htm">About Us</a>
+			<a href="FeaturedGames.htm">Featured Games</a>
+			<a href="Events.htm">Events</a>
+			<a href="ContactUs.htm">Contact Us</a>
+		</div>
+		
+      <section id="main">
+        <h1>Form Summary</h1>
+        <p>Your form has been submitted and you entered the following data:</p>
+
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+        <br/>
+        <br/>
+      </section>
+      <footer>
+			<address>
+				Dead Pixel Arcade &#183;
+				123 Sesame Street &#183;
+				New York, NY 10128 &#183;
+				(215) 702 - 3566 &#183;
+				DeadPixelArcade@gmail.com
+			</address>
+		</footer>
+				
+	</body>
+</html>
